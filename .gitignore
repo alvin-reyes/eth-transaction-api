@@ -1,0 +1,35 @@
+# Go build artifacts
+bin/
+*.exe
+*.test
+
+# Go modules
+vendor/
+
+# Environment variables
+.env
+
+# Log files
+*.log
+
+# IDE and editor directories
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Build directories
+build/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# Git directories
+.git/
+
+# Sqlite database file
+*.db
