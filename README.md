@@ -3,6 +3,9 @@
 
 This is a Go application for managing Ethereum transactions, which provides API endpoints for managing accounts and transactions. The application supports database migration, seeding, and running an HTTP server with rate limiting capabilities. The following guide will help you set up the application for local development and explore its features.
 
+![image](https://github.com/user-attachments/assets/eb3eab13-4019-4345-ad0e-0d68ec0a891a)
+
+
 ## Table of Contents
 - [Installation](#installation)
 - [Configuration](#configuration)
