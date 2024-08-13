@@ -59,7 +59,7 @@ PORT=3000
 
 The application uses SQLite as the database. This is a lightweight, file-based database that is easy to set up and use for local development.
 
-### Database Migration
+### Database Migration (optional)
 
 To set up the database schema, you need to run the migration command:
 
@@ -69,7 +69,7 @@ To set up the database schema, you need to run the migration command:
 
 This will create the necessary tables for storing accounts and transactions.
 
-### Database Seeding
+### Database Seeding (optional)
 
 To populate the database with initial data, use the seed command:
 
