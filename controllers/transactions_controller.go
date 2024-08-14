@@ -25,6 +25,26 @@ import (
 	"gorm.io/gorm"
 )
 
+func GetAccounts(db *gorm.DB) http.HandlerFunc {
+	return func(w http.ResponseWriter, r *http.Request) {
+		var accounts []models.Account
+		if err := db.Find(&accounts).Error; err != nil {
+			http.Error(w, "Failed to retrieve accounts", http.StatusInternalServerError)
+			return
+		}
+
+		response := map[string]interface{}{
+			"data":  accounts,
+			"count": len(accounts),
+		}
+
+		w.Header().Set("Content-Type", "application/json")
+		w.WriteHeader(http.StatusOK)
+		json.NewEncoder(w).Encode(response)
+	}
+
+}
+
 // GetAccountTransactions handles the request to get an account's transactions
 func GetAccountTransactions(db *gorm.DB) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
