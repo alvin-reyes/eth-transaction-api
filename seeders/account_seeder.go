@@ -10,8 +10,8 @@ import (
 func SeedAccounts(db *gorm.DB) {
 	addresses := []string{
 		"0x95222290DD7278Aa3Ddd389Cc1E1d165CC4BAfe5",
-		"0x7C456a5eA65E03fbb5F3Bd7B7Ec5f9A04C1a9E3D",
-		"0xBf241F9aA6c542dE3d2b6C89D9A43Fc9149A2E35",
+		"0x4838B106FCe9647Bdf1E7877BF73cE8B0BAD5f97",
+		"0xC70ae19B5FeAA5c19f576e621d2bad9771864fe2",
 	}
 
 	accountUuids := []string{
